@@ -1,0 +1,56 @@
+.titulo_pagina{
+    padding: 1em;
+    margin: 0 4vw;
+    font-size: 1.5em;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Sección general con flexibilidad */
+.general_seccion {
+    display: grid;
+    margin: 0 4vw;
+    grid-template-rows: auto;
+    text-align: justify;
+    justify-content: center;
+}
+
+/* Ajuste del tamaño del texto */
+p {
+    font-size: 2.5vh;
+}
+
+/* Secciones con diseño adaptable */
+.primera_seccion,
+.segunda_seccion,
+.tercera_seccion {
+    padding: 1em;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Se adapta automáticamente */
+}
+
+/* Imágenes adaptables */
+.img1,
+.img2,
+.img3 {
+    width: 100%;
+    max-width: 86vh;
+    height: 100%;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .titulo_pagina {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 2vh;
+    }
+
+    .primera_seccion,
+    .segunda_seccion,
+    .tercera_seccion {
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
+    }
+}

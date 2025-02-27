@@ -1,0 +1,89 @@
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1% 4% 5% 4%;
+  place-items: center;
+}
+
+.articleServiciosGeneral {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5em;
+}
+
+.articleServicios {
+  background-color: #d2f1de;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 35%;
+  width: 20vw;
+  gap: 2em;
+  cursor: pointer;
+}
+
+.articleServicios img {
+  padding: 20px;
+  height: 12em;
+  width: fit-content;
+}
+
+.articleServicios h2 {
+  font-size: x-large;
+}
+
+.articleServicios img,
+.articleServicios h2,
+.articleServicios p {
+  transition: all 0.5s ease-in-out;
+}
+
+.articleServicios:hover img,
+.articleServicios:hover h2,
+.articleServicios:hover p {
+  transform: scale(1.1);
+}
+
+.articleServiciosGeneral a {
+  color: inherit;
+  font-size: x-large;
+}
+
+.articleServiciosGeneral button {
+  background-color: #69d191;
+  padding: 10px 20px;
+  font-size: large;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  margin-top: 10px;
+}
+
+.articleServiciosGeneral button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+  .servicios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .articleServicios {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicios {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .articleServicios {
+    width: 40vw;
+  }
+}

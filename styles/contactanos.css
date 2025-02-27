@@ -1,0 +1,105 @@
+.titulo_pagina{
+    padding: 1em;
+    margin: 0 4vw;
+    font-size: 1.5em;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Sección general con flexibilidad */
+.general_seccion {
+    display: grid;
+    margin: 0 4vw;
+    grid-template-rows: auto;
+    text-align: justify;
+    position: relative;
+}
+
+.section-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    margin: 20px;
+}
+
+.imagen{
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+form{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    margin-top: 1em;
+    width: 98%;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.boton{
+    display: flex;
+    place-content: center;
+}
+
+
+button {
+        width: 50%;
+        height: 50px;
+        margin-bottom: 10px;
+        background-color: #69d191;
+        font-family: "poppins", sans-serif;
+        font-size: x-large;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+.nombre{
+    padding: 14px;
+    opacity: 0.5;
+}
+
+.telefono {
+    padding: 14px;
+    opacity: 0.5;
+}
+
+.correo{
+    padding: 14px;
+    opacity: 0.5;
+}
+
+.mensaje{
+    padding: 14px;
+    opacity: 0.5;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .titulo_pagina {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 2vh;
+    }
+
+    .primera_seccion,
+    .segunda_seccion,
+    .tercera_seccion {
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
+    }
+}

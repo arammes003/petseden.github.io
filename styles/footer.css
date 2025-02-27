@@ -1,0 +1,67 @@
+footer {
+  background-color: #38b568;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 10px;
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+.logoFooter {
+  justify-self: center;
+
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.tituloFooter {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+footer article {
+  gap: 1em;
+  text-align: center;
+}
+
+footer article p {
+  font-size: 1.2em;
+  color: black;
+  transition: ease-in-out 0.3s;
+}
+
+footer article p:hover:nth-child(1) {
+  font-size: 1.4em;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer article:nth-child(3) img {
+  width: 2em;
+  margin: 0 0.5em;
+  justify-content: center;
+}
+.contactoFooter img {
+  cursor: pointer;
+}
+
+.copyright {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

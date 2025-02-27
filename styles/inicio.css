@@ -1,0 +1,96 @@
+.sectionBanner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.sectionBanner button {
+  width: 150px;
+  height: 50px;
+  bottom: 10px;
+  position: absolute;
+
+  background-color: #69d191;
+  font-family: "poppins", sans-serif;
+  font-size: x-large;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sectionBanner button:hover {
+  transform: scale(1.1);
+}
+
+.banner {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .sectionBanner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectionBanner button {
+    position: absolute;
+    margin-bottom: 10px;
+  }
+
+  .banner {
+    height: 40vh;
+  }
+}
+
+.sectionComoTrabajamos {
+  display: flex;
+  margin: 0% 6%;
+  padding: 2em;
+
+  background-color: #d2f1de;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.fraseNegrita {
+  font-size: 2.5vh;
+  font-weight: 900;
+}
+
+.sectionComoTrabajamos p {
+  margin: 2em;
+  font-size: 2.5vh;
+  text-align: justify;
+}
+
+.sectionComoTrabajamos img {
+  padding: 2em;
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (max-width: 1024px) {
+  .sectionComoTrabajamos {
+    flex-wrap: wrap;
+  }
+}
+
+.instalaciones img {
+  width: calc(88%);
+  object-fit: contain;
+  margin: 0 6%;
+  border-radius: 20px;
+}
